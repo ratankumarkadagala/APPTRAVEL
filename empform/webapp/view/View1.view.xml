@@ -1,0 +1,16 @@
+<mvc:View controllerName="empform.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:form ="sap.ui.layout.form">
+        <form:SimpleForm id="simpleForm" layout="ResponsiveGridLayout" editable="true" labelSpanL="3" labelSpanM="3" columnsL="1" columnsM="1">
+            <Label id="idName" text="{i18n>name}"/>
+            <Input id="idNameInput" value="{empModel>/employee/name}"  enabled="{empModel>/employee/enabled}" placeholder="{i18n>namePlaceholder}"/>
+            <Label id="idEmail" text="{i18n>email}"/>
+            <Input id="idEmailInput" value="{empModel>/employee/email}"  enabled="{empModel>/employee/enabled}" placeholder="{i18n>emailPlaceholder}"/>
+            <Label id="idPhone" text="{i18n>phone}"/>
+            <Input id="idPhoneInput" value="{empModel>/employee/phone}" enabled="{empModel>/employee/enabled}" placeholder="{i18n>phonePlaceholder}"/>
+            <Label id="idDepartment" text="{i18n>department}"/>
+            <Input id="idDepartmentInput" value="{empModel>/employee/department}" enabled="{empModel>/employee/enabled}" placeholder="{i18n>departmentPlaceholder}"/>
+            <Label id="idEnabled" text="{i18n>enabled}"/>
+            <CheckBox id="idEnabledCheckBox" selected="{empModel>/employee/enabled}" />
+        </form:SimpleForm>
+</mvc:View>
